@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.custom {
+    width: 10em;
+    height: 5em;
+    background-color: #a52a2a;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    text-align: center;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 0 10px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 1em;
+    width: 6em;
+    box-sizing: border-box;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 10px;
+}
+
+.customstyle-in {
+    animation-duration: 1s;
+    animation-name: mystyle-in;
+}
+
+@keyframes mystyle-in {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.customstyle-out {
+    animation-duration: 2s;
+    animation-name: mystyle-out;
+}
+
+@keyframes mystyle-out {
+    from {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
